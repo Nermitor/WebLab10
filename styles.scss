@@ -1,0 +1,48 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  max-height: 100%;
+}
+
+
+.main{
+  &__title{
+  }
+  &__image{
+    margin: -12% auto 0;
+    display: block;
+  }
+}
+
+.persona{
+  padding: 40px;
+  &__name{
+    text-align: center;
+  }
+  &__flex{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__image{
+    display: block;
+    min-height: 400px;
+    max-height: 600px;
+
+  }
+  &__description{
+    padding: 20px;
+    font-size: 1.2rem;
+  }
+}
+
+.prev{
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 30px
+}

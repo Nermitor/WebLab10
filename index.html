@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="main">
+    <h1 class="main__title">Sabaton</h1>
+    <img class="main__image" id="image" usemap="#menmap"
+         src="https://avatars.yandex.net/get-music-content/4387391/c24ab66f.p.344742/m1000x1000" alt="">
+    <map name="menmap">
+        <area shape="circle" coords="111,290,100" href="yuhanson.html" alt="">
+        <area shape="circle" coords="306,411,100" href="sundstrem.html" alt="">
+        <area shape="circle" coords="547,348,50" href="broden.html" alt="">
+        <area shape="circle" coords="662,351,50" href="vandal.html" alt="">
+        <area shape="circle" coords="864,338,100" href="reland.html" alt="">
+    </map>
+</div>
+<script>
+  log = (event) => {
+    console.log(event.x, event.y);
+  }
+  image.addEventListener('mousedown', (log));
+  image.addEventListener('mouseup', log);
+  image.addEventListener('drag', (event) => event.preventDefault());
+</script>
+</body>
+</html>
